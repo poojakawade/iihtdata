@@ -1,0 +1,133 @@
+CSS vs SCSS vs SASS
+-------------------
+
+
+2015-2016
+	15 hrs required to create angular app
+
+	NPM				maven
+	package.json == pom.xml
+		dependencies
+
+	
+
+angular basics -> 2022
+
+-----------
+$ npx -p @angular/cli ng new proj-name --style=scss
+-----------
+
+generator -> @angular/cli
+	2 mins required to created angular app
+	
+	Install @angular/cli
+		- install npm by installing node
+			- download and install nodejs
+			- node -v (14 =+ is required)
+			- npm -v
+			
+		- npm install -g @angular/cli
+		
+			only for virtual machines
+			C:\Users\123\AppData\Roaming\npm
+				add this path to PATH environment variable 
+				C:\Users\123\AppData\Roaming\npm
+		- ng version
+		- Create angular project
+		- ng new project-name
+		
+		
+Structure -> 
+	open/flexible
+	
+	
+	angular.json
+	tsconfig
+	karma
+	
+	package.json==pom.xml
+	
+		src/index.html
+		src/main.ts
+			import AppModule from ......
+			
+			
+			buttons
+			header
+			login
+			chart
+			modules
+				user
+					profile
+					welcome
+			services
+				user.service.ts
+				emp.service.ts
+			
+			
+-----------------
+Start app: npm run start
+
+	localhost:4200
+
+Stop app: ctrl + c
+
+readme.md
+	ng g ... name
+	
+		c component
+		s service
+		g guard
+		m module
+		
+		
+change port: 
+	package.json
+		start: "ng serve --port 3000"
+
+
+
+=======================================
+
+$ download and install nodejs
+$ node -v (14 =+ is required)
+$ npm -v
+			
+		$ npm install -g @angular/cli
+		
+			only for virtual machines
+			C:\Users\123\AppData\Roaming\npm
+				add this path to PATH environment variable 
+				C:\Users\123\AppData\Roaming\npm
+
+		$ ng version
+		- Create angular project
+		$ ng new project-name
+		
+		
+-----------------
+Start app: 
+$ npm run start
+
+	localhost:4200
+
+Stop app: ctrl + c
+
+
+=======================
+
+Install angular
+$ npm install -g @angular/cli
+
+Create angular project named as MyApp
+$ ng new MyApp
+
+Go inside MyApp directory
+$ cd MyApp
+
+Start the application
+$ npm run start
+
+
+
+

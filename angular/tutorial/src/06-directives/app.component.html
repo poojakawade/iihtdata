@@ -1,0 +1,9 @@
+<button (click)="toggle()">Toggle: {{flag}}</button>
+<ul>
+    <li>This is list no. 1</li>
+    <li class="success">This is list no. 2</li>
+    <li class="error">This is list no. 3</li>
+    <li [ngClass]="flag==false?'success':'error'">This is list no. 4</li>
+    <li [ngClass]="mycssclass">This is list no. 5</li>
+    <li [ngStyle]="mystylecss">This is list no. 6</li>
+</ul>

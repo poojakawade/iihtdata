@@ -1,0 +1,24 @@
+// for everyone
+POST http://localhost:8080/authenticate
+content-type: application/json
+
+{
+    "username":"demo", 
+    "password": "demo@123"
+}
+###
+GET http://localhost:8080/demo/greet
+###
+
+
+
+
+GET http://localhost:8080/demo/hello
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJkYXRlIjoiMjAyMi0wOS0yOFQxMTo0MDozNC44NTk1NzQ5MDAiLCJzdWIiOiJkZW1vIiwicm9sZSI6InVzZXIiLCJtZXNzYWdlIjoic29tZSBvdGhlciBtZXNzYWdlIiwiZXhwIjoxNjY0MzYzNDM0LCJpYXQiOjE2NjQzNDU0MzR9.BBaHmoe-uU9Ats2L6YXRGBrGS7_SzQRQCsBtCarQROodV5X40XY28cSLQpoWvDyyXBr-VEdfBnC-RydKs99zqw
+
+###
+GET http://localhost:8080/demo/greet/mike
+
+
+
+

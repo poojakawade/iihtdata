@@ -1,0 +1,31 @@
+<button (click)="load()">Load</button>
+
+<p *ngIf="movies.length==0">Movies array is empty</p>
+
+<form>
+    Title: <input type="text" #title /><br/>
+    Director: <input type="text" #director /><br/>
+    Rating: <input type="number" #rating /><br/>
+    <input type="button" value="Add" (click)="addMovie(title.value, director.value, +rating.value);title.value=''" />
+</form>
+
+<table *ngIf="movies.length>0">
+    <thead>
+        <tr>
+            <th>S.No.</th>
+            <th>Title</th>
+            <th>Director</th>
+            <th>Rating</th>
+            <th>#</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let movie of movies;let i = index">
+            <td>{{i+1}}</td>
+            <td>{{movie.title}}</td>
+            <td>{{movie.director}}</td>
+            <td>{{movie.rating}}</td>
+            <td><button (click)="deleteMovieByIndex(i)">Delete</button></td>
+        </tr>
+    </tbody>
+</table>

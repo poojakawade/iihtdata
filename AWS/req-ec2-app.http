@@ -1,0 +1,17 @@
+GET http://54.175.40.96:8080/api/v1/movies
+###
+GET http://ec2-54-175-40-96.compute-1.amazonaws.com:8080/api/v1/movies
+###
+GET http://54.175.40.96:8080/api/v1/movies/2
+###
+POST http://54.175.40.96:8080/api/v1/movies
+content-type: application/json
+
+{
+    "title": "Ironman",
+    "author": "Tom",
+    "rating": 4.1
+}
+###
+
+

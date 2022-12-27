@@ -1,0 +1,28 @@
+<h2>All movies</h2>
+
+<p *ngIf="movies.length==0">Movies list is empty</p>
+
+<button (click)="create()">AddMovie</button>
+<table *ngIf="movies.length>0">
+    <thead>
+        <tr>
+            <!-- <th>Id</th> -->
+            <th>Title</th>
+            <!-- <th>Director</th>
+            <th>Rating</th> -->
+            <th>Read</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let movie of movies">
+            <!-- <td>{{movie.id}}</td> -->
+            <td>{{movie.title}}</td>
+            <!-- <td>{{movie.author}}</td>
+            <td>{{movie.rating}}</td> -->
+            <td><button>Read</button></td>  <!-- goto(id) -->
+            <td><button (click)="deleteMovie(movie.id)">Delete</button></td>
+        </tr>
+    </tbody>
+
+</table>

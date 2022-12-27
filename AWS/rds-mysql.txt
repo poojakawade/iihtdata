@@ -1,0 +1,35 @@
+Create database
+- select engine - mysql
+
+- version
+= username, password
+= security group - my ip
+= public access - yes
+- others
+    - backup
+    - log
+    - update
+- Create 
+
+
+Endpoint: mysql-server.ca6fijkjexxt.us-east-1.rds.amazonaws.com
+Port: 3306
+Username: admin
+Password: s5GywNyPjZ55O87OdajR
+
+
+------------------
+
+mysql cli:
+    $ mysql -u admin --port 3306 --host mysql-server.ca6fijkjexxt.us-east-1.rds.amazonaws.com -ps5GywNyPjZ55O87OdajR
+
+workbench:
+    host: mysql-server.ca6fijkjexxt.us-east-1.rds.amazonaws.com
+    port: 3306
+    username: admin     
+    password: s5GywNyPjZ55O87OdajR
+
+java app:
+    spring.datasource.url=jdbc:mysql://mysql-server.ca6fijkjexxt.us-east-1.rds.amazonaws.com:3306/ctsb34?createDatabaseIfNotExist=true
+    spring.datasource.username=admin
+    spring.datasource.password=s5GywNyPjZ55O87OdajR

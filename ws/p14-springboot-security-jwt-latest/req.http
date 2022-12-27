@@ -1,0 +1,39 @@
+GET http://localhost:8080/api/home
+###
+POST http://localhost:8080/authenticate
+content-type: application/json
+
+{
+    "username": "raja",
+    "password": "demo@123"
+}
+###
+POST http://localhost:8080/authenticate
+content-type: application/json
+
+{
+    "username": "sandeep",
+    "password": "demo@123"
+}
+
+###
+# Restricted endpoints
+###
+
+# director
+GET http://localhost:8080/api/movies
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJkYXRlIjoiMjAyMi0wOS0yOVQxNDoyOTowMy4xOTM4MDAxNzYiLCJzdWIiOiJyYWphIiwicm9sZSI6InVzZXIiLCJtZXNzYWdlIjoic29tZSBvdGhlciBtZXNzYWdlIiwiZXhwIjoxNjY0NDQyMjQzLCJpYXQiOjE2NjQ0NDE5NDN9.kze_mStfIXjpJzV-aaS8xFWK_mIEeTawtfO7LCheZ50bvvLzciNuR24JBN-4hlswgsQawS5hkBBGrh_qyI2kVw
+###
+
+
+# admin
+GET http://localhost:8080/api/directors
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJkYXRlIjoiMjAyMi0wOS0yOVQxNDoyOTowMy4xOTM4MDAxNzYiLCJzdWIiOiJyYWphIiwicm9sZSI6InVzZXIiLCJtZXNzYWdlIjoic29tZSBvdGhlciBtZXNzYWdlIiwiZXhwIjoxNjY0NDQyMjQzLCJpYXQiOjE2NjQ0NDE5NDN9.kze_mStfIXjpJzV-aaS8xFWK_mIEeTawtfO7LCheZ50bvvLzciNuR24JBN-4hlswgsQawS5hkBBGrh_qyI2kVw
+
+###
+
+# raka -> director, admin
+# eyJhbGciOiJIUzUxMiJ9.eyJkYXRlIjoiMjAyMi0wOS0yOVQxNDoyOTowMy4xOTM4MDAxNzYiLCJzdWIiOiJyYWphIiwicm9sZSI6InVzZXIiLCJtZXNzYWdlIjoic29tZSBvdGhlciBtZXNzYWdlIiwiZXhwIjoxNjY0NDQyMjQzLCJpYXQiOjE2NjQ0NDE5NDN9.kze_mStfIXjpJzV-aaS8xFWK_mIEeTawtfO7LCheZ50bvvLzciNuR24JBN-4hlswgsQawS5hkBBGrh_qyI2kVw
+
+# sandeep -> admin
+# eyJhbGciOiJIUzUxMiJ9.eyJkYXRlIjoiMjAyMi0wOS0yOVQxNDoyOToyNS45OTA3NTg1MzYiLCJzdWIiOiJzYW5kZWVwIiwicm9sZSI6InVzZXIiLCJtZXNzYWdlIjoic29tZSBvdGhlciBtZXNzYWdlIiwiZXhwIjoxNjY0NDQyMjY1LCJpYXQiOjE2NjQ0NDE5NjV9.bm24KNZlq5hOMRYc14-WyFUic56xuKg5aZP0Fc6DxyA3uZHio2LnJyiG3-MDr5ZUQ3rKxD1XgaUp0jhb3UnLPA

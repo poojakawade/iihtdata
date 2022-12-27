@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:mysql://mysql-server.ca6fijkjexxt.us-east-1.rds.amazonaws.com:3306/ctsb34?createDatabaseIfNotExist=true
+    username: admin
+    password: s5GywNyPjZ55O87OdajR
+    driverClassName: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+      database-platform: org.hibernate.dialect.MySQL8Dialect 
+

@@ -1,0 +1,9 @@
+POST https://kndxerq1t9.execute-api.us-east-1.amazonaws.com/dev/tasks
+content-type: application/json
+
+{
+    "userId": 2, 
+    "id": 53, 
+    "title": "superman is flying", 
+	"completed": "yes"
+}
